@@ -2,7 +2,9 @@
 # Project Title
 Build an Adversarial Search Agent.
 
-## Synopsis
+## Introduction
+This was my second project in Udacity Artificial Intelligence Nanodegree program. The details of this project are discussed below:
+### Synopsis
 
 In this project, an adversarial search agent was developed in order to play the game "Isolation".  Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.  These rules are implemented in the `isolation.Board` class provided in the repository. 
 
@@ -71,7 +73,7 @@ The following example creates a game and illustrates the basic API.
 
 ### Tournament
 
-The `tournament.py` script is used to evaluate the effectiveness of your custom heuristics.  The script measures relative performance of your agent (named "Student" in the tournament) in a round-robin tournament against several other pre-defined agents.  The Student agent uses time-limited Iterative Deepening along with your custom heuristics.
+The `tournament.py` script is used to evaluate the effectiveness of our custom heuristics.  The script measures relative performance of our agent (named "Student" in the tournament) in a round-robin tournament against several other pre-defined agents.  The Student agent uses time-limited Iterative Deepening along with your custom heuristics.
 
 The performance of time-limited iterative deepening search is hardware dependent (faster hardware is expected to search deeper than slower hardware in the same amount of time).  The script controls for these effects by also measuring the baseline performance of an agent called "ID_Improved" that uses Iterative Deepening and the improved_score heuristic defined in `sample_players.py`.  Our goal is to develop a improved heuristic. 
 
@@ -88,7 +90,7 @@ The tournament opponents are listed below. (See also: sample heuristics and play
 
 ## Game Visualization
 
-The `isoviz` folder contains a modified version of chessboard.js that can animate games played on a 7x7 board.  In order to use the board, we must run a local webserver by running `python -m http.server 8000` from our project directory (you can replace 8000 with another port number if that one is unavailable), then open your browser to `http://localhost:8000` and navigate to the `/isoviz/display.html` page.  Enter the move history of an isolation match (i.e., the array returned by the Board.play() method) into the text area and run the match.  Refresh the page to run a different game.  (Feel free to submit pull requests with improvements to isoviz.)
+The `isoviz` folder contains a modified version of chessboard.js that can animate games played on a 7x7 board.  In order to use the board, we must run a local webserver by running `python -m http.server 8000` from our project directory (you can replace 8000 with another port number if that one is unavailable), then open the browser to `http://localhost:8000` and navigate to the `/isoviz/display.html` page.  Enter the move history of an isolation match (i.e., the array returned by the Board.play() method) into the text area and run the match.  Refresh the page to run a different game.  (Feel free to submit pull requests with improvements to isoviz.)
 
 
 
